@@ -5,141 +5,157 @@
 }
 
 :root {
+  --cor-primaria: #ddd;
   --fonte-principal: 'Poppins', sans-serif;
+  --link: #313131;
+  --link-ativo: #3D7DBC;
 }
 
+/* auxiliar */
 .container {
-  background-color: #c1bbbb;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.menu__inicial{
-  background-color: #ffffff;
-  padding: .70rem 5rem;
+.container-fluid {
+  width: 100%;
+}
 
+/* conteudo */
+
+#header {
+  background-color: #ffffff;
+}
+
+.navbar {
+  background-color: var(--cor-primaria);
+}
+
+.navbar .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
 }
 
-.menu__logo{
-    height: 60px;
+.wrapper .navbar__logo img {
+    height: 3.75rem;
 }
 
-.menu__links {
+.navbar .navbar__menu .links {
   display: flex;
   gap: 2rem;
   list-style-type: none;
+  font-family: var(--fonte-principal);
 }
 
-.menu__link{
-  font-family: var(--fonte-principal);
-  font-size: 1.2rem;
-  color: #313131;
+.navbar__menu .links .link:hover > a {
+  color: var(--link-ativo);
+}
+
+.navbar__menu .links .link a {
+  color: var(--link);
   text-decoration: none;
 }
 
-.menu__link:hover{
-  color: #3D7DBC;
-}
+/* banner */
 
-
-.capa__fundo {
+#banner {
   background-image: url(../assets/fundo.jpg);
   background-repeat:no-repeat;
   background-size: cover;
   background-position:center center;
-  height: 42rem;
+  height: calc(100vh - 5.75rem);
 }
 
-.capa__conteudo {
+.banner__content {
   color: #FFFFFF;
   font-family: 'Varela', sans-serif;
   text-transform: capitalize;
-  padding: 10rem 3rem;
-
-  display: flex;
-  flex-direction: column;
+  padding: 5rem 0;
 }
 
-.capa__titulo {
+.banner__content__title {
   font-size: 3.5rem;
   font-weight: 700;
+  margin-top: 10rem;
 }
 
-.capa__texto {
+.banner__content__text {
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   width: 50rem;
   font-weight: 400;
   opacity: 80%;
   align-items: center;
+  margin-top: 1rem;
 }
 
-.capa__formulario {
+.banner__content__form {
   display: flex;
-  align-items: center; 
-  padding-top: 1rem;
+  align-items: center;
+  max-width: 500px;
+  position: relative;
+  margin-top: 1rem;
 }
 
-.capa__email{
-  border: 0;
-  padding: 1rem 1rem;
-  opacity: 60%;
-  outline: none;
-  height: 3rem;
-  width: 30rem;
-}
-
-.capa__email:focus {
-  box-shadow: 0 0 0 0;
-  border: 0 none;
-  outline: 0;
-}
-
-.capa__botao{
+.content__form__input {
+  padding: 10px;
+  width: 100%;
   border: none;
   outline: none;
-  background: none;
-  float: left;
-  font-size: 2rem;
-  padding: 0 1rem;
-  text-decoration: none;
-  color: #fffefe;
+  opacity: .5;
+  transition: all 200ms ease-in-out;
 }
 
-.capa__botao:hover {
-  color: #3D7DBC;
+.content__form__input:focus {
+  opacity: 1;
 }
 
-.capa__inferior {
+.content__form__button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.content__form__button i {
+  font-size: 1.4rem;
+}
+
+
+.banner__menu {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  margin-right: 5rem;
+  margin-top: 2rem;
 }
 
-.menu__inferiores {
-  list-style-type: none;
+.banner__menu .banner__menu__links {
+  list-style: none;
 }
 
-.menu__inferiores li:hover{
-  list-style-type: disc;
-  color: #ffffff;
-}
-
-
-.menu__inferior {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.4rem;
-  color: #ffffff;
+.banner__menu .banner__menu__links a {
+  color: var(--cor-primaria);
+  font-size: 1.2rem;
+  font-family: var(--fonte-principal);
   text-decoration: none;
-  opacity: 80%;
 }
 
-.menu__inferior:hover{
-  color: #3D7DBC;
-  opacity: 100%;
+.banner__menu .banner__menu__links li:hover {
+  list-style: disc;
+  color: var(--cor-primaria);
 }
+
+.banner__menu .banner__menu__links li:hover > a {
+  color: var(--link-ativo);
+  font-family: var(--fonte-principal);
+  text-decoration: none;
+}
+
 
 .personagens {
   padding: 1rem;
@@ -165,17 +181,17 @@
 }
 
 .personagens__borda{
-  border: 3px solid #FFFFFF;
+  border: 0.1875rem solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
   border-radius: 1rem;
-  width: 250px;
+  width: 15.625rem;
   border-style:inset;
   list-style-type: none;
 }
 
 .personagens__borda:hover{
-  border: 3px solid #3672ae;
+  border: 0.1875rem solid #3672ae;
   background-color: #96c4e1;
   color:#313131;
   transition: .50s;
@@ -186,8 +202,8 @@
 }
 
 .personagens__foto {
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
   border-radius: 50%;
   margin-top: 1rem;
 }
@@ -243,8 +259,8 @@
 }
 
 .rodape__logo {
-  height: 25px;
-  width: 25px;
+  height: 1.5625rem;
+  width: 1.5625rem;
 }
 
 .rodape__creditos {
@@ -255,11 +271,11 @@
 }
 
 .rodape__imagem {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
 }
 
-.rodape__texto a{
+.rodape__texto a {
   text-decoration: none;
   color:#3672ae;
 }
