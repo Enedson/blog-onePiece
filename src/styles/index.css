@@ -13,7 +13,7 @@
 
 /* auxiliar */
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -78,7 +78,6 @@
 .banner__content__title {
   font-size: 3.5rem;
   font-weight: 700;
-  margin-top: 10rem;
 }
 
 .banner__content__text {
@@ -94,13 +93,13 @@
 .banner__content__form {
   display: flex;
   align-items: center;
-  max-width: 500px;
+  max-width: 31.25rem;
   position: relative;
   margin-top: 1rem;
 }
 
 .content__form__input {
-  padding: 10px;
+  padding: 0.625rem;
   width: 100%;
   border: none;
   outline: none;
@@ -116,7 +115,7 @@
   background-color: transparent;
   border: none;
   position: absolute;
-  right: 10px;
+  right: 0.625rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,8 +155,8 @@
   text-decoration: none;
 }
 
-
-.personagens {
+/* cards */
+#cards {
   padding: 1rem;
   background-image: url(../assets/personagem.jpg);
   background-repeat:no-repeat;
@@ -168,7 +167,12 @@
   text-align: center;
 }
 
-.personagens__titulo {
+.cards__content {
+  background-color: transparent;
+  font-family: 'Varela', sans-serif;
+}
+
+.cards__title {
   color: #FFFFFF;
   font-size: 2rem;
 }
@@ -182,12 +186,12 @@
 
 .personagens__borda{
   border: 0.1875rem solid #FFFFFF;
-  background-color: transparent;
   color: #FFFFFF;
   border-radius: 1rem;
   width: 15.625rem;
   border-style:inset;
   list-style-type: none;
+  cursor: pointer;
 }
 
 .personagens__borda:hover{
