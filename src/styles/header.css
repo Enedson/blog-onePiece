@@ -1,0 +1,47 @@
+#header {
+    background-color: #ffffff;
+  }
+  
+  .navbar {
+    background-color: var(--cor-primaria);
+    padding: 1rem;
+  }
+  
+  .navbar .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon__menu {
+    background-image: url(../assets/list-fill.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+  }
+  
+  .wrapper .navbar__logo img {
+      height: 3.75rem;
+  }
+  
+  .navbar .navbar__menu .links {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    font-family: var(--fonte-principal);
+  }
+  
+  .navbar__menu .links .link:hover > a {
+    color: var(--link-ativo);
+  }
+  
+  .navbar__menu .links .link a {
+    color: var(--link);
+    text-decoration: none;
+  }
+
+  

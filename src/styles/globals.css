@@ -1,0 +1,15 @@
+:root {
+    --cor-primaria: #ddd;
+    --fonte-principal: 'Poppins', sans-serif;
+    --link: #313131;
+    --link-ativo: #3D7DBC;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .container-fluid {
+    width: 100%;
+  }

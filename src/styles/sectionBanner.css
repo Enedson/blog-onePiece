@@ -1,0 +1,95 @@
+#banner {
+    background-image: url(../assets/fundo.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center center;
+    height: calc(100vh - 5.85rem);
+    padding: 1rem;
+  }
+  
+  .banner__content {
+    color: #FFFFFF;
+    font-family: 'Varela', sans-serif;
+    text-transform: capitalize;
+    padding: 4rem 0;
+  }
+  
+  .banner__content__title {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  
+  .banner__content__text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    width: 50rem;
+    font-weight: 400;
+    opacity: 80%;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .banner__content__form {
+    display: flex;
+    align-items: center;
+    max-width: 31.25rem;
+    position: relative;
+    margin-top: 1rem;
+  }
+  
+  .content__form__input {
+    padding: 0.625rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    opacity: .5;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .content__form__input:focus {
+    opacity: 1;
+  }
+  
+  .content__form__button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .content__form__button i {
+    font-size: 1.4rem;
+  }
+  
+  
+  .banner__menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+  }
+  
+  .banner__menu .banner__menu__links {
+    list-style: none;
+  }
+  
+  .banner__menu .banner__menu__links a {
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+  }
+  
+  .banner__menu .banner__menu__links li:hover {
+    list-style: disc;
+    color: var(--cor-primaria);
+  }
+  
+  .banner__menu .banner__menu__links li:hover > a {
+    color: var(--link-ativo);
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+  }
